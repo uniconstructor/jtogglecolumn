@@ -327,7 +327,7 @@ EOD;
      */
     protected function renderDataCellContent($row, $data) {
         ob_start();
-        if($this->action==qtoggle AND $this->queueType=='select')
+        if($this->action=='qtoggle' AND $this->queueType=='select')
             $this->renderSeltoggle($this->toggle_button, $row, $data);
          else
             $this->renderButton($this->toggle_button, $row, $data);
